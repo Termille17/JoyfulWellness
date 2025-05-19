@@ -152,6 +152,13 @@ header {
 .hypelinks:hover {
   color: var(--primary-color-dark);
 }
+.footlinks {
+  color: var(--white);
+  text-decoration: none;
+}
+.footlinks:hover {
+  color: var(--primary-color);
+}
 
 .link a {
   padding: 0.5rem;
