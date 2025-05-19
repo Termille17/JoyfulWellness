@@ -1164,57 +1164,61 @@ header {
   .footer__container{
     display: none;
   } 
-  .doctors__card, .doctors__info {
-    width: 100%;
-    max-width: 500px;
+  .doctors__info {
+    max-width: 100%;
+    margin: 1rem;
   }
-  .doctors__grid {
-    flex-direction: column;
-    align-items: center;
+
+  .doctors__info p {
+    font-size: 0.95rem;
   }
-  
+
+  .contact__container {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
   .counsellor__header {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
   .counsellor__intro p {
     max-width: 100%;
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
   }
 
   .counsellor__content {
     flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
   }
 
   .profile__card {
-    flex: 0 0 100%; /* full width card on mobile */
+    flex: 1 1 100%;
     padding: 1rem;
   }
 
   .profile__image img {
-    height: 550px; /* smaller image on mobile */
-  }
-
-  .profile__socials {
-    bottom: -3rem;
+    width: 100%;
+    height: auto;
   }
 
   .profile__card h4 {
-    font-size: 1.3rem; /* slightly smaller name text */
+    font-size: 1.2rem;
   }
 
-  .profile__bio {
-    max-width: 100%;
-    margin-top: 1rem;
+  .profile__title {
+    font-size: 1rem;
   }
 
   .profile__bio p {
-    font-size: 1rem; /* normal text size for mobile */
-    line-height: 1.6;
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+    .profile__socials {
+    bottom: -3rem;
   }
 
   .privacy__container {
@@ -1277,7 +1281,7 @@ header {
 
   .blog__grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .blog__post img {
