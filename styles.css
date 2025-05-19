@@ -1205,6 +1205,7 @@ header {
   .profile__card {
     flex: 1 1 100%;
     padding: 1rem;
+    align-items: center;
   }
 
   .profile__image img {
