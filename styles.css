@@ -1161,9 +1161,9 @@ header {
   .why__image img{
     display: none;
   }
-  .footer__container{
+  /* .footer__container{
     display: none;
-  } 
+  }  */
   .doctors__info {
     max-width: 100%;
     margin: 1rem;
