@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Wellness | Joyful Wellness</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="section__container nav__container">
+          <div class="nav__logo">Joyful<span> Wellness.</span></div>
+        
+          <!-- Menu Button for Mobile -->
+            <button id="menu-toggle" class="menu__button" aria-label="Toggle Menu">
+              &#9776;
+            </button>
+  
+            <!-- Close Button for Mobile (hidden by default) -->
+            <button id="close-menu" class="close__menu__btn" aria-label="Close Menu">
+              &times;
+            </button>
+            
+          <!-- Navigation Links -->
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="index.html#home">Home</a></li>
+            <li class="link"><a href="index.html#about">Who We Are</a></li>
+            <li class="link"><a href="index.html#service">Services</a></li>
+            <li class="link"><a href="index.html#blog">Wellness Journal</a></li>
+            <li class="link"><a href="index.html#pages">Our Councellor</a></li>
+          </ul>
+        
+          <a href="#contact" class="btn">Contact Us</a>
+        </nav>      
+        <div class="section__container header__container" id="home">
+          <div class="header__content">
+            <h1>Empowering You to Live Well</h1>
+            <p>
+              At Joyful Wellness, your health journey is our mission. Through personalized care, expert guidance, and a warm, welcoming environment, we’re here to help you thrive—body, mind, and spirit. Experience wellness, reimagined.
+            </p>
+            <button class="btn">Explore Our Services</button>
+          </div>
+          <div class="header__form">
+            <form>
+              <h4>Book Now</h4>
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+              <input type="text" placeholder="Address" />
+              <input type="text" placeholder="Phone No." />
+              <button class="btn form__btn">Book Appointment</button>
+            </form>
+          </div>
+        </div>
+    </header>
+
+    <section class="section__container wellness__container">
+        <h2 class="section__header">Discover the 8 Dimensions of Wellness</h2>
+        <p class="wellness__intro">
+          Wellness is more than physical health—it’s a multidimensional journey. At Joyful Wellness, we honor all aspects of your wellbeing, helping you flourish in every area of life.
+        </p>
+      
+        <div class="wellness__grid">
+          <div class="wellness__card">
+            <img src="assets/physical.jpg" alt="Physical Wellness">
+            <h3>Physical</h3>
+            <p>Caring for your body through movement, nutrition, sleep, and preventive care.</p>
+          </div>
+          <div class="wellness__card">
+            <img src="assets/emotional.jpeg" alt="Emotional Wellness">
+            <h3>Emotional</h3>
+            <p>Understanding and managing your feelings with kindness and self-compassion.</p>
+          </div>
+          <div class="wellness__card">
+            <img src="assets/social.jpg" alt="Social Wellness">
+            <h3>Social</h3>
+            <p>Nurturing healthy, meaningful relationships and a strong support system.</p>
+          </div>
+          <div class="wellness__card">
+            <img src="assets/intellectual.png" alt="Intellectual Wellness">
+            <h3>Intellectual</h3>
+            <p>Expanding knowledge, creative abilities, and lifelong curiosity.</p>
+          </div>
+        </div>
+        <div>
+            <br><br><br><br>
+            <div class="quote-style">
+                <h2 class="section__header">Wellness isn’t just about green smoothies🌿</h2>
+                <p class="wellness__intro">
+                    ... and yoga poses you can't pronounce. At Joyful Wellness, we believe true wellbeing means laughing through the chaos, stretching your limits (and your hamstrings), and finding balance—without falling over🌸.
+                </p>        
+            </div>
+              <br><br>      
+        </div>
+        <div class="wellness__grid">
+          <div class="wellness__card">
+            <img src="assets/spiritual.png" alt="Spiritual Wellness">
+            <h3>Spiritual</h3>
+            <p>Living with purpose, meaning, and values that bring you peace.</p>
+          </div>
+          <div class="wellness__card">
+            <img src="assets/environmental.png" alt="Environmental Wellness">
+            <h3>Environmental</h3>
+            <p>Creating spaces that support wellbeing and living in harmony with nature.</p>
+          </div>
+          <div class="wellness__card">
+            <img src="assets/financial.png" alt="Financial Wellness">
+            <h3>Financial</h3>
+            <p>Managing resources wisely for stability, confidence, and peace of mind.</p>
+          </div>
+          <div class="wellness__card">
+            <img src="assets/occupational.png" alt="Occupational Wellness">
+            <h3>Occupational</h3>
+            <p>Finding fulfillment and balance in work or purposeful activity.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="section__container blog__container">
+        <h2 class="section__header">From the Counsellor’s Desk</h2>
+        <p class="blog__intro">
+          Every week, our certified wellness counsellor shares heart-centered guidance, reflections, and real-life tools to support your healing and growth journey. 🌿
+        </p>
+
+        <div class="blog__nav">
+          <span id="blog-prev"><i class="ri-arrow-left-line"></i></span>
+          <span id="blog-next"><i class="ri-arrow-right-line"></i></span>
+        </div>        
+        <br><br>
+
+        <div class="blog__viewport">
+          <div class="blog__grid" id = "blog-grid">
+            <article class="blog__post">
+              <img src="images/blog/self-care-week.jpg" alt="Self Care Blog">
+              <div class="blog__content">
+                <h3>Why Self-Care is Not Selfish</h3>
+                <p>Learn how to make space for yourself without guilt. This week, we explore rituals that restore and renew your energy.</p>
+                <a href="blog.html">Read More →</a>
+              </div>
+            </article>
+        
+            <article class="blog__post">
+              <img src="images/blog/balancing-life.jpg" alt="Work-Life Balance Blog">
+              <div class="blog__content">
+                <h3>Balancing Life in a Chaotic World</h3>
+                <p>Feeling overwhelmed? Here's how to ground yourself and make choices aligned with your peace and purpose.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>
+        
+            <article class="blog__post">
+              <img src="images/blog/emotional-health.jpg" alt="Emotional Wellness Blog">
+              <div class="blog__content">
+                <h3>Talking About Emotions</h3>
+                <p>It’s okay not to be okay. We discuss how emotional honesty strengthens connection—with others and yourself.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>
+
+            <article class="blog__post">
+              <img src="images/blog/mindfulness-practice.jpg" alt="Mindfulness Blog">
+              <div class="blog__content">
+                <h3>Mindfulness: A Daily Practice</h3>
+                <p>Discover how just 10 minutes of mindfulness a day can shift your mindset and reduce stress.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>
+            
+            <article class="blog__post">
+              <img src="images/blog/healing-inner-child.jpg" alt="Healing Inner Child Blog">
+              <div class="blog__content">
+                <h3>Healing Your Inner Child</h3>
+                <p>Reconnect with the younger you. Learn tools to comfort, validate, and empower your inner child.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>
+            
+            <article class="blog__post">
+              <img src="images/blog/boundaries.jpg" alt="Setting Boundaries Blog">
+              <div class="blog__content">
+                <h3>Setting Healthy Boundaries</h3>
+                <p>Boundaries aren’t walls—they’re bridges to better relationships. Here’s how to set them lovingly.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>
+            
+            <article class="blog__post">
+              <img src="images/blog/relationships-growth.jpg" alt="Relationship Growth Blog">
+              <div class="blog__content">
+                <h3>Growing Together in Relationships</h3>
+                <p>Support each other's healing while keeping your own needs in balance. Let’s talk growth and love.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>
+            
+            <article class="blog__post">
+              <img src="images/blog/gratitude-journal.jpg" alt="Gratitude Blog">
+              <div class="blog__content">
+                <h3>The Power of Gratitude</h3>
+                <p>Gratitude shifts perspective. Try these journaling prompts to reconnect with joy in your everyday life.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>
+            
+            <article class="blog__post">
+              <img src="images/blog/letting-go.jpg" alt="Letting Go Blog">
+              <div class="blog__content">
+                <h3>Letting Go of What No Longer Serves You</h3>
+                <p>It’s time to release. Learn gentle but powerful ways to let go of habits, people, or thoughts holding you back.</p>
+                <a href="#">Read More →</a>
+              </div>
+            </article>            
+          </div>
+        </div>
+    </section>      
+      
+    <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h3><span>Joyful Wellness.</span></h3>
+            <p>
+              We are honored to be part of your wellness journey—committed to delivering
+              compassionate, personalized, and high-quality care every step of the way.
+            </p>
+            <p>
+              Let’s work together to achieve balance, healing, and holistic wellbeing for you and your loved ones.
+            </p>
+          </div>
+    
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <p onclick="location.href='about.html#about-us'">About Us</p>
+            <p onclick="location.href='gallery.html'">Gallery</p>
+            <p onclick="location.href='blog.html'">Insights</p>
+          </div>
+    
+          <div class="footer__col">
+            <h4>Helpful Links</h4>
+            <p onclick="location.href='privacy.html'">Privacy Policy</p>
+            <p onclick="location.href='terms.html'">Terms & Conditions</p>
+            <p onclick="location.href='faq.html'">FAQs</p>
+          </div>
+    
+          <div class="footer__col">
+            <h4>Contact Us</h4>
+            <p><i class="ri-map-pin-2-fill"></i> 28 Rae Frankel St, Brackenhurst, Alberton, 1448</p>
+            <p><i class="ri-mail-fill"></i> mamellom2@gmail.com</p>
+            <p><i class="ri-phone-fill"></i> +27 79 497 8060</p>
+          </div>
+        </div>
+    
+        <div class="footer__bar">
+          <div class="footer__bar__content">
+            <p>© 2025 Joyful Wellness. All rights reserved.</p>
+            <div class="footer__socials">
+              <span><i class="ri-instagram-line"></i></span>
+              <span><i class="ri-facebook-fill"></i></span>
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-twitter-fill"></i></span>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

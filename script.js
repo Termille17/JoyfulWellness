@@ -45,4 +45,29 @@ let lastScrollY = window.scrollY;
       menuToggle.style.display = "block";
     });
   });
-   
+
+const blogGrid = document.getElementById('blog-grid');
+const blogPosts = document.querySelectorAll('.blog__post');
+const postsPerPage = 3;
+let currentPage = 0;
+
+const updateCarousel = () => {
+  const width = blogPosts[0].offsetWidth + 32; // post width + gap
+  const offset = currentPage * postsPerPage * width;
+  blogGrid.style.transform = `translateX(-${offset}px)`;
+};
+
+document.getElementById('blog-next').addEventListener('click', () => {
+  const maxPage = Math.floor(blogPosts.length / postsPerPage) - 1;
+  if (currentPage < maxPage) {
+    currentPage++;
+    updateCarousel();
+  }
+});
+
+document.getElementById('blog-prev').addEventListener('click', () => {
+  if (currentPage > 0) {
+    currentPage--;
+    updateCarousel();
+  }
+});
