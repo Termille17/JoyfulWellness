@@ -1328,6 +1328,6 @@ header {
 
   .footer__bar__content {
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 }
