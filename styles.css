@@ -581,10 +581,14 @@ header {
   font-size: 1.05rem; /* slightly larger text */
   color: var(--text-light);
   line-height: 1.5;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
-
+.verified__logo
+{
+  width: 450px;
+  padding-top: 30px;
+}
 
 
 .contact__content {
