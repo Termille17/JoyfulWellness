@@ -79,7 +79,7 @@ header {
       rgba(18, 172, 142, 0.4),  /* Reduced opacity for better image visibility */
       rgba(18, 172, 142, 0.2)
     ),
-    url("assets/header.jpg");
+    url("assets/header1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -931,9 +931,8 @@ header {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.wellness__card img {
-  width: 200px;
-  height: 250px;
+.wellness__card i {
+  color: var(--primary-color); /* or any color you like */
   margin-bottom: 1rem;
 }
 
@@ -1063,6 +1062,44 @@ header {
   right: 80px;
 }
 
+.blog__body {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.blog__body p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog__body ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blog__body ul li {
+  list-style-type: disc;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.blog__body blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #88c0d0;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
 
 /* Responsive Design */
 @media (width < 900px) {
@@ -1295,6 +1332,10 @@ header {
   .blog__grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+    .blog__post {
+    flex: 0 0 100%;
   }
 
   .blog__post img {
