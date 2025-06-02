@@ -331,7 +331,7 @@ header {
   border-radius: 10px;
 }
 
-.about__container {
+.about__containers {
   padding: 5rem 1.5rem;
   max-width: 1100px;
   margin: auto;
@@ -340,7 +340,7 @@ header {
   gap: 4rem;
 }
 
-.about__container section {
+.about__containers section {
   background: linear-gradient(to bottom right, #ffffff, var(--primary-color-light));
   padding: 2.5rem 2rem;
   border-left: 6px solid var(--primary-color);
@@ -349,19 +349,19 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about__container section:hover {
+.about__containers section:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
 }
 
-.about__container h2 {
+.about__containers h2 {
   font-size: 2.2rem;
   margin-bottom: 1.2rem;
   color: var(--primary-color);
   position: relative;
 }
 
-.about__container h2::after {
+.about__containers h2::after {
   content: '';
   display: block;
   width: 50px;
@@ -371,20 +371,20 @@ header {
   border-radius: 2px;
 }
 
-.about__container p,
-.about__container li {
+.about__containers p,
+.about__containers li {
   font-size: 1.1rem;
   line-height: 1.9;
   color: #333;
   margin-bottom: 1rem;
 }
 
-.about__container ul {
+.about__containers ul {
   list-style: none;
   padding-left: 0;
 }
 
-.about__container li::before {
+.about__containers li::before {
   content: '✔';
   color: var(--primary-color);
   margin-right: 0.75rem;
@@ -568,6 +568,19 @@ header {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+.verified__logo__container {
+  display: flex;
+  max-width: 200px; /* Optional: limits size */
+}
+
+.verified__logo {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
 
 .profile__card {
   flex: 0 0 400px; /* wider card */
@@ -1266,20 +1279,20 @@ header {
   .about__image img{
     display: none;
   }
-  .about__container {
+  .about__containers {
     padding: 3rem 1rem;
   }
 
-  .about__container section {
+  .about__containers section {
     padding: 2rem 1.5rem;
   }
 
-  .about__container h2 {
+  .about__containers h2 {
     font-size: 1.6rem;
   }
 
-  .about__container p,
-  .about__container li {
+  .about__containers p,
+  .about__containers li {
     font-size: 1rem;
   }
   .why__image img{
@@ -1318,6 +1331,26 @@ header {
     flex-direction: column;
     gap: 1.5rem;
   }
+
+  .verified__logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 780px;
+  width: 100%;
+  margin: auto;
+}
+
+.verified__logo {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
 
   .profile__card {
     flex: 1 1 100%;

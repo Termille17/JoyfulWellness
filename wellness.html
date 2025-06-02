@@ -47,15 +47,16 @@
             </a>
           </div>
           <div class="header__form">
-            <form>
+            <form action="https://formspree.io/f/mgvyekzb" method="POST">
               <h4>Book Now</h4>
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
-              <input type="text" placeholder="Address" />
-              <input type="text" placeholder="Phone No." />
-              <button class="btn form__btn">Book Appointment</button>
+              <input type="text" name="firstName" placeholder="First Name" required />
+              <input type="text" name="lastName" placeholder="Last Name" required />
+              <input type="text" name="address" placeholder="Address" required />
+              <input type="text" name="phone" placeholder="Phone No." required />
+              <button class="btn form__btn" type="submit">Book Appointment</button>
             </form>
           </div>
+
         </div>
     </header>
 
@@ -136,16 +137,16 @@
         <div class="blog__viewport">
           <div class="blog__grid" id = "blog-grid">
             <article class="blog__post">
-              <img src="images/blog/self-care-week.jpg" alt="Self Care Blog">
+              <img src="assets/selfcare.jpg" alt="Self Care Blog">
               <div class="blog__content">
                 <h3>Why Self-Care is Not Selfish</h3>
                 <p>Learn how to make space for yourself without guilt. This week, we explore rituals that restore and renew your energy.</p>
-                <a href="blog.html">Read More →</a>
+                <a href="wellness.html#blog-grid">Read More →</a>
               </div>
             </article>
         
             <article class="blog__post">
-              <img src="images/blog/balancing-life.jpg" alt="Work-Life Balance Blog">
+              <img src="assets/balance.jpg" alt="Work-Life Balance Blog">
               <div class="blog__content">
                 <h3>Balancing Life in a Chaotic World</h3>
                 <p>Feeling overwhelmed? Here's how to ground yourself and make choices aligned with your peace and purpose.</p>
@@ -154,7 +155,7 @@
             </article>
         
             <article class="blog__post">
-              <img src="images/blog/emotional-health.jpg" alt="Emotional Wellness Blog">
+              <img src="assets/emotion.jpg" alt="Emotional Wellness Blog">
               <div class="blog__content">
                 <h3>Talking About Emotions</h3>
                 <p>It’s okay not to be okay. We discuss how emotional honesty strengthens connection—with others and yourself.</p>
@@ -163,7 +164,7 @@
             </article>
 
             <article class="blog__post">
-              <img src="images/blog/mindfulness-practice.jpg" alt="Mindfulness Blog">
+              <img src="assets/practice.jpg" alt="Mindfulness Blog">
               <div class="blog__content">
                 <h3>Mindfulness: A Daily Practice</h3>
                 <p>Discover how just 10 minutes of mindfulness a day can shift your mindset and reduce stress.</p>
@@ -172,7 +173,7 @@
             </article>
             
             <article class="blog__post">
-              <img src="images/blog/healing-inner-child.jpg" alt="Healing Inner Child Blog">
+              <img src="assets/healing.jpg" alt="Healing Inner Child Blog">
               <div class="blog__content">
                 <h3>Healing Your Inner Child</h3>
                 <p>Reconnect with the younger you. Learn tools to comfort, validate, and empower your inner child.</p>
@@ -236,7 +237,7 @@
           <h4>Explore</h4>
           <p onclick="location.href='about.html#about-us'">About Us</p>
           <p onclick="location.href='gallery.html'">Gallery</p>
-          <p onclick="location.href='blog.html'">Blog</p>
+          <p onclick="location.href='wellness.html#blog-grid'">Blog</p>
         </div>
     
         <div class="footer__col">

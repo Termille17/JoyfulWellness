@@ -71,3 +71,8 @@ document.getElementById('blog-prev').addEventListener('click', () => {
     updateCarousel();
   }
 });
+
+  const form = document.querySelector(".header__form form");
+  form.addEventListener("submit", function () {
+    alert("Your booking has been sent. Thank you!");
+  });
