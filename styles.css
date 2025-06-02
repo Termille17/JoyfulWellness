@@ -1325,9 +1325,9 @@ header {
     grid-template-columns: 1fr;
   }
 
-  img[alt="counsellor"] {
+  /* img[alt="counsellor"] {
     display: none;
-  }
+  } */
 
   .counsellor__header {
     flex-direction: column;
@@ -1367,8 +1367,9 @@ header {
 
   .profile__card {
     flex: 1 1 100%;
-    padding: 1rem;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .profile__image img {
