@@ -1480,6 +1480,18 @@ header {
     .blog__image {
     height: auto; /* Let the image scale naturally */
   }
+    .swiper-slide {
+    width: auto; /* Let Swiper handle width */
+  }
+
+  .swiper {
+    padding-bottom: 2rem;
+  }
+
+  .swiper-pagination {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 @media (width < 600px) {
