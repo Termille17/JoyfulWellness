@@ -76,3 +76,52 @@ document.getElementById('blog-prev').addEventListener('click', () => {
   form.addEventListener("submit", function () {
     alert("Your booking has been sent. Thank you!");
   });
+
+// Smooth scroll for anchor links
+  function initMobileSwiper() {
+    const isMobile = window.innerWidth <= 780;
+    const blogGrid = document.getElementById("blog-grid");
+
+    if (isMobile && !document.querySelector(".swiper-wrapper")) {
+      const swiperContainer = document.createElement("div");
+      swiperContainer.className = "swiper";
+
+      const swiperWrapper = document.createElement("div");
+      swiperWrapper.className = "swiper-wrapper";
+
+      // Convert blog posts into swiper slides
+      const posts = Array.from(blogGrid.children);
+      posts.forEach(post => {
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+        slide.appendChild(post);
+        swiperWrapper.appendChild(slide);
+      });
+
+      swiperContainer.appendChild(swiperWrapper);
+
+      // Optional controls
+      swiperContainer.innerHTML += `
+        <div class="swiper-pagination"></div>
+      `;
+
+      // Replace grid with swiper
+      blogGrid.parentNode.replaceChild(swiperContainer, blogGrid);
+
+      new Swiper(".swiper", {
+        slidesPerView: 1.1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+  }
+
+  // Run on load
+  window.addEventListener("load", initMobileSwiper);
+  // Optional: Run again on resize
+  window.addEventListener("resize", () => {
+    location.reload(); // You can improve this to reset only if needed
+  });
