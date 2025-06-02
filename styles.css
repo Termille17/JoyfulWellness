@@ -1316,6 +1316,10 @@ header {
     grid-template-columns: 1fr;
   }
 
+  img[alt="counsellor"] {
+    display: none;
+  }
+
   .counsellor__header {
     flex-direction: column;
     align-items: flex-start;
