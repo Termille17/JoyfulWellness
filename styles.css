@@ -1026,6 +1026,14 @@ header {
   text-align: center;
 }
 
+.blog__article {
+  display: none;
+}
+
+.blog__article.active {
+  display: block;
+}
+
 .blog__intro {
   max-width: 700px;
   margin: 0 auto 2rem;

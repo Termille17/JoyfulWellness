@@ -125,3 +125,5 @@ document.getElementById('blog-prev').addEventListener('click', () => {
   window.addEventListener("resize", () => {
     location.reload(); // You can improve this to reset only if needed
   });
+
+
