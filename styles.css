@@ -1237,6 +1237,13 @@ header {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+    .menu__button {
+    display: none;
+  }
+
+  .close__menu__btn {
+    display: none; /* Hidden until menu opens */
+  }
 
 }
 
