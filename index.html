@@ -189,11 +189,11 @@
           <div class="profile__image">
             <img src="assets/doctor-1.jpg" alt="counsellor" />
             <div class="profile__socials">
-              <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/joyfulwellness1/?hl=en" target="_blank" rel="noopener noreferrer">
                 <span><i class="ri-instagram-line"></i></span>
               </a>
 
-              <a href="https://facebook.com/yourhandle" target="_blank" rel="noopener noreferrer">
+              <a href="https://facebook.com/mamello.mphahlele" target="_blank" rel="noopener noreferrer">
                 <span><i class="ri-facebook-fill"></i></span>
               </a>
 
@@ -230,7 +230,7 @@
       </div>
     </section>
     
-    <section class="section__container contact__container" id="contact">
+    <!-- <section class="section__container contact__container" id="contact">
       <div class="contact__content">
         <h2 class="section__header">Get in Touch</h2>
         <p>
@@ -251,8 +251,146 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>      
-    </section>
-    
+    </section> -->
+    <section class="section__container contact__container" id="contact">
+  <div class="contact__content">
+    <h2 class="section__header">Get in Touch</h2>
+    <p>
+      Have questions or need assistance? Reach out to us, and we’ll get back to you as soon as possible.
+    </p>
+    <form action="https://formspree.io/f/mldlgyew" method="POST" class="contact__form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button class="sendbtn" type="submit">Send Message</button>
+    </form>
+  </div>
+  <div class="contact__image">
+    <div class="location-tabs">
+      <button class="tab-btn active" onclick="showMap(0)">Brackenhurst, Alberton</button>
+      <button class="tab-btn" onclick="showMap(1)">Ridgeway, Johannesburg</button>
+    </div>
+    <div id="maps-wrapper">
+      <iframe id="map0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3013071113637!2d28.098219899999997!3d-26.3167412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950527867c57c1%3A0x2d5dada023a058d7!2s28%20Rae%20Frankel%20St%2C%20Brackenhurst%2C%20Alberton%2C%201448!5e0!3m2!1sen!2sza!4v1746811082708!5m2!1sen!2sza"
+        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe id="map1"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4344.706394791889!2d27.996238798910376!3d-26.25317664926903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9508de5621cfa9%3A0x132d8d29c966b85!2sLongfellow%20St%2C%20Ridgeway%2C%20Johannesburg%20South%2C%202091!5e0!3m2!1sen!2sza!4v1754418253535!5m2!1sen!2sza"
+        width="100%" height="500" style="border:0; display:none;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+.section__container.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  background: #f6fafc;
+  padding: 40px 24px;
+  border-radius: 10px;
+}
+
+.contact__content {
+  flex: 1 1 340px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.contact__image {
+  flex: 1 1 320px;
+  min-width: 290px;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #d0d0d0;
+  font-size: 1rem;
+  resize: none;
+}
+
+.sendbtn {
+  width: 100%;
+  padding: 12px;
+  background: #225d18;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sendbtn:hover {
+  background: #398f2b;
+}
+
+.location-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.tab-btn {
+  flex: 1 1 0;
+  background: #e6f1ea;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  font-weight: 500;
+  color: #225d18;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+.tab-btn.active {
+  background: #225d18;
+  color: #fff;
+}
+
+#maps-wrapper {
+  width: 100%;
+  height: 500px;
+  min-height: 500px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0001;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .section__container.contact__container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .contact__image {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+</style>
+
+<script>
+function showMap(idx) {
+  document.getElementById('map0').style.display = idx === 0 ? 'block' : 'none';
+  document.getElementById('map1').style.display = idx === 1 ? 'block' : 'none';
+  // Tab highlighting
+  var tabs = document.querySelectorAll('.tab-btn');
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle('active', i === idx);
+  });
+}
+</script>
+
+
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
@@ -283,6 +421,7 @@
         <div class="footer__col">
           <h4>Contact Us</h4>
           <p><i class="ri-map-pin-2-fill"></i> 28 Rae Frankel St, Brackenhurst, Alberton, 1448</p>
+          <p><i class="ri-map-pin-2-fill"></i> Longfellow Street, Ridgeway Johannesburg 2091</p>
           <p><i class="ri-mail-fill"></i> mamellom2@gmail.com</p>
           <p><i class="ri-phone-fill"></i> +27 79 497 8060</p>
         </div>
