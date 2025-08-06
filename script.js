@@ -103,7 +103,7 @@ form.addEventListener("submit", function () {
 
 // Mobile Swiper (unchanged from your code)
 function initMobileSwiper() {
-  const isMobile = window.innerWidth <= 780;
+  const isMobile = window.innerWidth <= 768;
   const blogGrid = document.getElementById("blog-grid");
 
   if (isMobile && !document.querySelector(".swiper-wrapper")) {
